@@ -1,0 +1,16 @@
+Student Mangement System
+
+Maruf: Manage user Profile
+Al Amin: Student Class Management
+Yearul: Year Management
+Saiful: Group management
+Shifa: Shift Management
+Rana: Fee Category Option
+Ruma: Fee Category Amount
+Arif: Student Exam type
+Noor: Student Subjects
+Imran: Registration Management
+Mahbub: Student Assign Subject
+Moazzem: Manage Designation
+Kawser: Student Roll Generate
+Faisal: Regtration Fee
