@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\backend\AdminController;
+use App\Http\Controllers\Backend\Setup\DesignationController;
 use App\Http\Controllers\backend\UserController;
 
 /*
@@ -37,4 +38,14 @@ Route::prefix("user")->group(function(){
 	Route::post('update/{id}', [UserController::class, 'userUpdate'])->name('update_user');
 	Route::get('delete/{id}', [UserController::class, 'userDelete'])->name('user_delete');
 
+});
+
+Route::prefix("setup")->group(function(){
+	//Designation Routes
+	Route::get('designation/view', [DesignationController::class, 'DesignationView'])->name('designation.view');
+	Route::get('designation/create', [DesignationController::class, 'DesignationCreate'])->name('designation.create');
+	Route::post('designation/store', [DesignationController::class, 'DesignationStore'])->name('designation.store');
+	Route::get('designation/edit/{id}', [DesignationController::class, 'DesignationEdit'])->name('designation.edit');
+	Route::post('designation/update/{id}', [DesignationController::class, 'DesignationUpdate'])->name('designation.update');
+	Route::get('designation/delete/{id}', [DesignationController::class, 'DesignationDelete'])->name('designation.delete');
 });
