@@ -51,7 +51,7 @@
                                                     <td>{{ $designation->name }}</td>
                                                     <td>
                                                         <a href="{{ route('designation.edit', $designation->id) }}" class="btn btn-rounded btn-success mb-5">Edit</a>
-                                                        <a href="{{ route('designation.delete', $designation->id) }}" class="btn btn-rounded btn-danger mb-5">Delete</a>
+                                                        <a href="{{ route('designation.delete', $designation->id) }}" id="delete" class="btn btn-rounded btn-danger mb-5">Delete</a>
                                                     </td>
                                                 </tr>
                                                 @endforeach
